@@ -1,0 +1,29 @@
+{
+  "server":{
+    "host": "localhost",
+    "port": ":8080"
+  },
+  "mysql": {
+    "username": "Adam",
+    "password": "Eva",
+    "host": "localhost",
+    "port": "3306",
+    "name": "e-learning-platform"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": "6379",
+    "password": ""
+  },
+  "kafka": {
+    "brokers": ["127.0.0.1:9092"],
+    "topic": ""
+  },
+  "jwt":{
+  "secret": "LuckyQu"
+  },
+  "log": {
+    "level": "debug",
+    "path": "log/log.log"
+  }
+}

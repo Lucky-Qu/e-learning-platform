@@ -1,11 +1,11 @@
 {
   "server":{
     "host": "localhost",
-    "port": ":8080"
+    "port": "50000"
   },
   "mysql": {
     "username": "Adam",
-    "password": "Eva",
+    "password": "Eve",
     "host": "localhost",
     "port": "3306",
     "name": "e-learning-platform"
@@ -24,6 +24,6 @@
   },
   "log": {
     "level": "debug",
-    "path": "log/log.log"
+    "path": "log/file/log.log"
   }
 }

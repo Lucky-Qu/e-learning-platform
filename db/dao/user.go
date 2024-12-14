@@ -35,3 +35,19 @@ func (dao userDB) FindUserByUsername(username string) (*model.User, error) {
 	}
 	return &user, nil
 }
+func (dao userDB) UsernameHasExist(username string) (bool, error) {
+	var user model.User
+	if err := dao.db.Where("username = ?", username).First(&user).Error; err != nil {
+		return false, err
+	}
+	if user.Username != "" {
+		return true, nil
+	}
+	return false, nil
+}
+func (dao userDB) UpdateUser(username string, user *model.User) error {
+	if err := dao.db.Where("username = ?", username).Updates(user).Error; err != nil {
+		return err
+	}
+	return nil
+}

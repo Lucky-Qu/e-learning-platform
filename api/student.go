@@ -70,5 +70,26 @@ func StudentLogin(c *gin.Context) {
 	})
 }
 
-func StudentUpdate(c *gin.Context) {}
-func StudentDelete(c *gin.Context) {}
+func StudentUpdate(c *gin.Context) {
+	var student model.User
+	if err := c.ShouldBindJSON(&student); err != nil {
+		logger.DefaultLogger.Logger.Error("绑定出错", zap.Any("err", err))
+		c.JSON(http.StatusBadRequest, gin.H{
+			"code": http.StatusInternalServerError,
+			"msg":  "输入参数有误",
+		})
+		return
+	}
+	if err := service.StudentUpdate(c.GetHeader("Authorization"), &student); err != nil {
+		logger.DefaultLogger.Logger.Error("更新学生信息出错", zap.Any("err", err))
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"code": http.StatusInternalServerError,
+			"msg":  "更新信息出错，请稍后再试",
+		})
+	}
+	c.JSON(http.StatusOK, gin.H{
+		"code": http.StatusOK,
+		"msg":  "更新成功",
+		"data": student,
+	})
+}

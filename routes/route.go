@@ -29,7 +29,6 @@ func NewRouter() *gin.Engine {
 		verifiedStudent.Use(jwt.IdentifyStudent())
 		{
 			verifiedStudent.PUT("/update", api.StudentUpdate)
-			verifiedStudent.DELETE("/canceled", api.StudentDelete)
 		}
 	}
 	// Teacher用户组

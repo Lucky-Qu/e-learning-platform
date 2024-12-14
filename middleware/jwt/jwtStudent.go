@@ -24,6 +24,8 @@ func IdentifyStudent() gin.HandlerFunc {
 			c.JSON(http.StatusOK, gin.H{
 				"msg": msg,
 			})
+			c.Abort()
+			return
 		}
 		c.Next()
 	}

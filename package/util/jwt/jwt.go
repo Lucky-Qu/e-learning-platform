@@ -32,7 +32,7 @@ func ParseToken(tokenString string) (string, string, error) {
 		return "", "", err
 	}
 	if claims, ok := token.Claims.(*jwt.StandardClaims); ok && token.Valid {
-		return claims.Subject, claims.Subject, nil
+		return claims.Subject, claims.Audience, nil
 	} else {
 		return "", "", err
 	}

@@ -1,0 +1,1 @@
+2024-12-14T11:23:28.704+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "GET", "uri：": "/ping", "状态：": 200, "运行时间：": 0.000036167}

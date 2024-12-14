@@ -3,6 +3,7 @@ package routes
 import (
 	"e-learning-platform/api"
 	"e-learning-platform/config"
+	"e-learning-platform/middleware"
 	"e-learning-platform/middleware/jwt"
 	"errors"
 	"github.com/gin-gonic/gin"
@@ -11,7 +12,7 @@ import (
 func NewRouter() *gin.Engine {
 	router := gin.New()
 	router.Use(gin.Recovery())
-	router.Use()
+	router.Use(middleware.GinLogger())
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"msg": "pong",

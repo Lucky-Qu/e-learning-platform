@@ -35,5 +35,5 @@ func InitMySQL() {
 		panic(errors.New("MySQL初始化错误"))
 	}
 	//初始化建表
-	NewUserDB(db)
+	initUserDB(db)
 }

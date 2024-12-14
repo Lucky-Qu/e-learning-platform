@@ -23,11 +23,13 @@ func NewRouter() *gin.Engine {
 	{
 		//注册学生用户
 		studentGroup.POST("/register", api.StudentRegister)
+		studentGroup.POST("/login", api.StudentLogin)
 		//需要认证操作的行为
 		verifiedStudent := studentGroup.Group("/verified")
 		verifiedStudent.Use(jwt.IdentifyStudent())
 		{
-
+			verifiedStudent.PUT("/update", api.StudentUpdate)
+			verifiedStudent.DELETE("/canceled", api.StudentDelete)
 		}
 	}
 	// Teacher用户组

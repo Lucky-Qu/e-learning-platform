@@ -37,7 +37,37 @@ func StudentRegister(c *gin.Context) {
 }
 
 func StudentLogin(c *gin.Context) {
-
+	var student model.User
+	if err := c.ShouldBindJSON(&student); err != nil {
+		logger.DefaultLogger.Logger.Error("绑定登陆参数失败", zap.Any("err", err))
+		c.JSON(http.StatusBadRequest, gin.H{
+			"code": http.StatusBadRequest,
+			"msg":  "传入参数有误",
+		})
+		return
+	}
+	tokenString, err := service.StudentLogin(&student)
+	if err != nil {
+		if err.Error() == "record not found" {
+			logger.DefaultLogger.Logger.Info("用户不存在")
+			c.JSON(http.StatusNotFound, gin.H{
+				"code": http.StatusNotFound,
+				"msg":  "用户不存在",
+			})
+			return
+		}
+		logger.DefaultLogger.Logger.Error("登陆操作失败", zap.Any("err", err))
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"code": http.StatusInternalServerError,
+			"msg":  "登陆操作失败，请稍后再试",
+		})
+		return
+	}
+	c.JSON(http.StatusOK, gin.H{
+		"code":  http.StatusOK,
+		"msg":   "登陆成功",
+		"token": tokenString,
+	})
 }
 
 func StudentUpdate(c *gin.Context) {}

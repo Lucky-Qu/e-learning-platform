@@ -28,3 +28,10 @@ func (dao userDB) NewUser(user *model.User) error {
 	}
 	return nil
 }
+func (dao userDB) FindUserByUsername(username string) (*model.User, error) {
+	var user model.User
+	if err := dao.db.Where("username = ?", username).First(&user).Error; err != nil {
+		return nil, err
+	}
+	return &user, nil
+}

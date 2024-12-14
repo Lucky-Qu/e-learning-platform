@@ -1,318 +1,58 @@
-2024-12-14T11:23:28.704+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "GET", "uri：": "/ping", "状态：": 200, "运行时间：": 0.000036167}
-2024-12-14T12:12:41.194+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/user/register", "状态：": 404, "运行时间：": 0.00000025}
-2024-12-14T12:12:41.206+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/user/register", "状态：": 404, "运行时间：": 0.000000292}
-2024-12-14T12:14:38.104+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/user/register", "状态：": 404, "运行时间：": 0.000000291}
-2024-12-14T12:15:36.980+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/register", "状态：": 200, "运行时间：": 0.000197042}
-2024-12-14T13:00:11.461+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/register", "状态：": 200, "运行时间：": 0.016106958}
-2024-12-14T13:40:37.028+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:40:37.031+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.002878792}
-2024-12-14T13:46:05.624+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:46:05.627+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.003415041}
-2024-12-14T13:47:26.314+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:47:26.316+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.002328709}
-2024-12-14T13:47:39.792+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:47:39.792+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.000415208}
-2024-12-14T13:47:40.312+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:47:40.313+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.001055084}
-2024-12-14T13:47:52.561+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:47:52.562+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.000966}
-2024-12-14T13:49:40.135+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:49:40.136+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.001321125}
-2024-12-14T13:51:56.389+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "传入身份有误"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:51:56.392+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.003155833}
-2024-12-14T13:52:53.831+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "用户查询失败"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:52:53.831+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.003028584}
-2024-12-14T13:53:20.141+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "用户查询失败"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:53:20.148+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.008461333}
-2024-12-14T13:54:37.633+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "用户查询失败"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:54:37.639+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.007261833}
-2024-12-14T13:56:07.293+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "用户查询失败"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:51
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:56:07.294+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.002153375}
-2024-12-14T13:59:36.833+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:60	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "record not found"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:60
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/routes.NewRouter.GinLogger.func2
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T13:59:36.834+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.001588625}
-2024-12-14T14:01:03.668+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/middleware.GinLogger.func1	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001998541}
-2024-12-14T14:01:15.912+0800	error	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:62	e-learning-platform/api.StudentLogin	登陆操作失败	{"err": "record not found"}
-e-learning-platform/api.StudentLogin
-	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:62
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-e-learning-platform/middleware.GinLogger.func1
-	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:13
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/recovery.go:102
-github.com/gin-gonic/gin.(*Context).Next
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/context.go:185
-github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:633
-github.com/gin-gonic/gin.(*Engine).ServeHTTP
-	/Users/luckyqu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:589
-net/http.serverHandler.ServeHTTP
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:3210
-net/http.(*conn).serve
-	/Users/luckyqu/sdk/go1.23.2/src/net/http/server.go:2092
-2024-12-14T14:01:15.912+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/middleware.GinLogger.func1	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 500, "运行时间：": 0.002973917}
-2024-12-14T14:02:11.788+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/api/student.go:52	e-learning-platform/api.StudentLogin	用户不存在
-2024-12-14T14:02:11.793+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/middleware.GinLogger.func1	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 404, "运行时间：": 0.007555}
-2024-12-14T14:02:18.234+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/middleware.GinLogger.func1	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001098709}
+2024-12-14T15:16:54.545+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.00740975}
+2024-12-14T15:19:10.970+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.009091458}
+2024-12-14T15:20:12.460+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002211917}
+2024-12-14T15:20:46.072+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001686958}
+2024-12-14T15:21:29.756+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.003534167}
+2024-12-14T15:22:28.935+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.004884917}
+2024-12-14T15:22:29.756+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.00152175}
+2024-12-14T15:22:30.374+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001321208}
+2024-12-14T15:22:30.965+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.004570459}
+2024-12-14T15:22:31.562+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.005043083}
+2024-12-14T15:22:32.203+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001965833}
+2024-12-14T15:22:32.810+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001009625}
+2024-12-14T15:22:33.759+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.000926375}
+2024-12-14T15:22:34.445+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002088166}
+2024-12-14T15:22:35.048+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001585583}
+2024-12-14T15:22:35.762+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.005930542}
+2024-12-14T15:22:36.345+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.005755458}
+2024-12-14T15:22:36.959+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001161125}
+2024-12-14T15:23:42.439+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.004098959}
+2024-12-14T15:23:43.060+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001123458}
+2024-12-14T15:23:43.629+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001105458}
+2024-12-14T15:23:44.189+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002308167}
+2024-12-14T15:23:44.770+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.003785917}
+2024-12-14T15:23:45.873+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001372625}
+2024-12-14T15:23:46.624+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002219292}
+2024-12-14T15:23:47.425+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.000984833}
+2024-12-14T15:24:33.942+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002950292}
+2024-12-14T15:24:39.371+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001492833}
+2024-12-14T15:24:39.771+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.000999375}
+2024-12-14T15:24:40.171+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001866167}
+2024-12-14T15:25:30.773+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002192541}
+2024-12-14T15:25:31.254+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001144583}
+2024-12-14T15:25:31.669+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001847}
+2024-12-14T15:25:32.043+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001413083}
+2024-12-14T15:25:32.362+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.007884292}
+2024-12-14T15:25:32.729+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001234583}
+2024-12-14T15:26:15.316+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.006618291}
+2024-12-14T15:26:23.943+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001150916}
+2024-12-14T15:26:24.427+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001191958}
+2024-12-14T15:27:07.722+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.003334167}
+2024-12-14T15:27:10.438+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.00295525}
+2024-12-14T15:27:11.349+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.008778458}
+2024-12-14T15:27:11.913+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001963417}
+2024-12-14T15:27:12.489+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002592375}
+2024-12-14T15:27:13.080+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001073875}
+2024-12-14T15:30:51.123+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.006277083}
+2024-12-14T15:30:51.747+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.0013985}
+2024-12-14T15:30:52.167+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.000877375}
+2024-12-14T15:30:52.488+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001756125}
+2024-12-14T15:30:52.811+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.004207417}
+2024-12-14T15:30:53.478+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002149625}
+2024-12-14T15:30:53.779+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002335}
+2024-12-14T15:30:54.709+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002540042}
+2024-12-14T15:31:07.647+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.001236416}
+2024-12-14T15:31:08.432+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.0007995}
+2024-12-14T15:31:08.924+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.000801541}
+2024-12-14T15:31:09.868+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.002832166}
+2024-12-14T15:31:10.287+0800	info	/Users/luckyqu/Projects/Golang/e-learning-platform/middleware/log.go:18	e-learning-platform/routes.NewRouter.GinLogger.func2	请求成功	{"请求ip：": "127.0.0.1", "请求方法：": "POST", "uri：": "/student/login", "状态：": 200, "运行时间：": 0.005721833}

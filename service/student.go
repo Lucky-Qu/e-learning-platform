@@ -1,10 +1,14 @@
 package service
 
 import (
+	"e-learning-platform/cache/redis"
 	"e-learning-platform/db/dao"
 	"e-learning-platform/db/model"
+	"e-learning-platform/log/logger"
 	"e-learning-platform/package/util/jwt"
 	"errors"
+	"go.uber.org/zap"
+	"time"
 )
 
 func StudentRegister(student *model.User) error {
@@ -49,9 +53,17 @@ func StudentLogin(student *model.User) (string, error) {
 	if user.Password != student.Password {
 		return "", errors.New("密码不正确！")
 	}
-	tokenString, err := jwt.GetTokenString(user.Username, user.Identity)
+	tokenString, err := redis.GetStringFromRedis(user.Username)
+	if err == nil {
+		return tokenString, nil
+	}
+	tokenString, err = jwt.GetTokenString(user.Username, user.Identity)
 	if err != nil {
 		return "", err
+	}
+	err = redis.AddStringToRedis(user.Username, tokenString, time.Hour*1)
+	if err != nil {
+		logger.DefaultLogger.Logger.Warn("Redis缓存写入失败", zap.Any("err", err))
 	}
 	return tokenString, nil
 }

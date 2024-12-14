@@ -98,6 +98,10 @@ func StudentUpdate(tokenString string, student *model.User) error {
 			return errors.New("密码不得低于8位或高于16位")
 		}
 	}
+	//修改头像
+	if student.Avatar == "" {
+		student.Avatar = "static/avatar/default.png"
+	}
 	err = dao.UserDB.UpdateUser(username, student)
 	if err != nil {
 		return err
